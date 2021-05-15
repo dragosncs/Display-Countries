@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Display Countries</title>
+		<link
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1>Countries in the World</h1>
+			</div>
+		</header>
+
+		<section>
+			<div class="container">
+				<input
+					id="search"
+					class="search"
+					type="text"
+					placeholder="Search for a country"
+				/>
+
+				<div class="dropdown" id="filter">
+					Filter by 
+					<i class="fas fa-chevron-down"></i>
+					
+					<ul>
+						<strong>Region</strong>
+							<li>All</li>
+							<li>Africa</li>
+							<li>America</li>
+							<li>Asia</li>
+							<li>Europe</li>
+							<li>Oceania</li>
+
+						<Strong>Population</Strong>
+							<li>Ascending</li>
+							<li>Descending</li>
+
+						<Strong>Currencies</Strong>
+							<li>A-Z</li>
+							<li>Z-A</li>
+
+						<Strong>Time Zone</Strong>
+							<li>Ascending</li>
+							<li>Descending</li>
+							
+						<Strong>Languages</Strong>
+							<li>A-z</li>
+							<li>Z-A</li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		
+
+		<div class="modal" id="modal">
+			<div class="container">
+				<button class="btn-close" id="close">
+					<i class="fas fa-times"></i>
+				</button>
+				<img src="" alt="" />
+				<div class="modal-body"></div>
+			</div>
+		</div>
+
+		<section>
+			<div class="container countries" id="countries">
+				<h2>Loading Countries...</h2>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
